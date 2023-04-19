@@ -12,11 +12,20 @@ img {
 .side-tab {
   background-color: #8b1911;
   box-shadow: 0px 0px 20px #707070;
-  min-height: 100vh;
   height: 100%;
+<<<<<<< Updated upstream
   width: 10vw;
   justify-self: center;
   position: absolute;
+=======
+<<<<<<< Updated upstream
+  width: 140px;
+  justify-self: center;
+  position: fixed;
+=======
+  width: 100%;
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
   align-content: center;
   padding-top: 1%;
   color: white;

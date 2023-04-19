@@ -15,11 +15,13 @@ function CourseSwapPage() {
       {/*div for sidebar with pages in CourseSwap*/}
       <SideBar />
 
-      {/*div for search tab*/}
-      <SearchBar />
+      <div className="course-swap-items">
+        {/*div for search tab*/}
+        <SearchBar />
 
-      {/*div for main course swap content*/}
-      <CourseSwapContent />
+        {/*div for main course swap content*/}
+        <CourseSwapContent />
+      </div>
     </div>
   );
 }
@@ -223,6 +225,16 @@ function SearchBar() {
 
   return (
     <div className="cs-search">
+      <input type="text" placeholder="Search" id="cs-search-input" />
+      <button id="cs-searchBtn">
+        <img src={search} alt="search" />
+      </button>
+      <button type="button" id="cs-sortBtn" onClick={toggleSort}>
+        SORT
+      </button>
+      <button type="button" id="cs-filterBtn" onClick={toggleCourses}>
+        FILTER
+      </button>
       <div className={courseFilterTab ? 'hide cs-popup' : 'show cs-popup'}>
         <h3>Filters</h3>
         <div id="cs-filter-content">
@@ -255,17 +267,6 @@ function SearchBar() {
           <button className="cs-sort-options">CRN</button>
         </div>
       </div>
-
-      <input type="text" placeholder="Search" id="cs-search-input" />
-      <button id="cs-searchBtn">
-        <img src={search} alt="search" />
-      </button>
-      <button type="button" id="cs-sortBtn" onClick={toggleSort}>
-        SORT
-      </button>
-      <button type="button" id="cs-filterBtn" onClick={toggleCourses}>
-        FILTER
-      </button>
     </div>
   );
 }

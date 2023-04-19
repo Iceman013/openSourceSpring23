@@ -3,14 +3,27 @@
   width: 100%;
   margin: 0;
   border: 5px red;
+<<<<<<< Updated upstream
   position: absolute;
+<<<<<<< Updated upstream
+=======
+  top: var(--top-height);
+=======
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+
+.textbook-items {
+  width: 100%;
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 }
 
 .row {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: auto;
 }
 
 .profile-pic:hover {
@@ -18,11 +31,8 @@
 }
 
 .search {
-  height: 20vh;
   max-width: 40%;
   padding-top: 20px;
-  margin-left: 5%;
-  position: relative;
 }
 
 /*
